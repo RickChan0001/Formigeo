@@ -10,6 +10,30 @@
     <title>FormiGeo - Contato</title>
     <link rel="shortcut icon" href="img/FormiGeo-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/FormiGeo.css">
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 9999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,7 +43,7 @@
 
     <ul id="menu">
         <li><a href="home.html">Início</a></li>
-        <li><a href="anota%C3%A7%C3%B5es.html">Conceitos</a></li>
+        <li><a href="anotações.html">Conceitos</a></li>
         <li><a href="contato.html">Contato</a></li>
     </ul>
 
@@ -64,18 +88,7 @@
                     <small>Domingo e feriados fechados</small>
                 </div>
             </div>
-        </div> <!-- Fim da div contact-items -->
-
-        <!-- Bloco de Atendimento Técnico está comentado, então não aparece na página
-        <div class="contact-item">
-            <div class="contact-icon">🏢</div>
-            <div class="contact-details">
-                <h3>Atendimento Técnico</h3>
-                <p>Visitas técnicas mediante agendamento</p>
-                <small>Atendimento único e fácil</small>
-            </div>
         </div>
-        -->
 
         <div class="contact-whatsapp-btn">
             <a href="https://wa.me/5541991875514?text=Olá! Gostaria de mais informações sobre topografia." target="_blank" class="btn-whatsapp">
@@ -83,6 +96,11 @@
             </a>
         </div>
     </div>
+
+    <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+    <a href="https://wa.me/5541991875514?text=Olá! Vim através da página de contato." class="whatsapp-float" target="_blank" title="Fale Conosco no WhatsApp">
+        💬
+    </a>
 
     <!-- RODAPÉ SEPARADO -->
     <div id="rodape">
@@ -105,6 +123,5 @@
         </div>
     </div>
 
-</body>
 <script src="js/javascript.js"></script>
 </html>
